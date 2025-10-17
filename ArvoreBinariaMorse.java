@@ -29,6 +29,45 @@ public class ArvoreBinariaMorse {
         atual.caractere = caractere;
     }
 
+        void inserirTodos() {
+        inserir(".-", 'A');
+        inserir("-...", 'B');
+        inserir("-.-.", 'C');
+        inserir("-..", 'D');
+        inserir(".", 'E');
+        inserir("..-.", 'F');
+        inserir("--.", 'G');
+        inserir("....", 'H');
+        inserir("..", 'I');
+        inserir(".---", 'J');
+        inserir("-.-", 'K');
+        inserir(".-..", 'L');
+        inserir("--", 'M');
+        inserir("-.", 'N');
+        inserir("---", 'O');
+        inserir(".--.", 'P');
+        inserir("--.-", 'Q');
+        inserir(".-.", 'R');
+        inserir("...", 'S');
+        inserir("-", 'T');
+        inserir("..-", 'U');
+        inserir("...-", 'V');
+        inserir(".--", 'W');
+        inserir("-..-", 'X');
+        inserir("-.--", 'Y');
+        inserir("--..", 'Z');
+        inserir("-----", '0');
+        inserir(".----", '1');
+        inserir("..---", '2');
+        inserir("...--", '3');
+        inserir("....-", '4');
+        inserir(".....", '5');
+        inserir("-....", '6');
+        inserir("--...", '7');
+        inserir("---..", '8');
+        inserir("----.", '9');
+    }
+
     // percorre a árvore e retorna o caractere encontrado conforme código morse
     char buscarLetra(String codigo){
         Nodo atual = raiz;
@@ -90,4 +129,21 @@ public class ArvoreBinariaMorse {
         exibirArvoreRec(no.esquerda, nivel + 1);
     }
 
+    // Função para remover um caractere da árvore 
+    void remover(String codigo) {
+        Nodo atual = raiz;
+        for (int i = 0; i < codigo.length(); i++) {
+            char simbolo = codigo.charAt(i);
+
+            if (simbolo == '.') {
+                if (atual.esquerda == null) return; // Não existe o caractere
+                atual = atual.esquerda;
+            } else if (simbolo == '-') {
+                if (atual.direita == null) return; // Não existe o caractere
+                atual = atual.direita;
+            }
+        }
+        // Limpar o caractere encontrado
+        atual.caractere = ' ';
+    }
 }
