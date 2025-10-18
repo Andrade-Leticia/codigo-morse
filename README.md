@@ -67,15 +67,8 @@ Na árvore binária, cada ponto (·) significa ir para a esquerda e cada traço 
 | S     | `...`             | esquerda → esquerda → esquerda |
 
 Representação Parcial da Árvore Morse ( considerando inserções aleatórias de letras feitas pelo usuário):
-                     (RAIZ)
-                    /      \
-                   E        T
-                 /  \      /  \
-                I    A    N    M
-               / \  / \  / \  / \
-              S  U R  W D  K G  O
-             / \
-            H   V
+<img width="312" height="284" alt="image" src="https://github.com/user-attachments/assets/e7104615-8c32-4bb2-b9d5-efad1748fc90" />
+
             
 Para “SOS” o programa percorre:
   S  → ... → E → I → S
