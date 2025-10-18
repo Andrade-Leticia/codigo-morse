@@ -27,6 +27,7 @@ ArvoreBinariaMorse.java: Classe principal que contém toda a lógica da árvore 
   - buscar(String mensagem): Traduz uma sequência de códigos Morse separados por espaços.
   - exibirArvore(): Exibe a árvore hierarquicamente no console.
   - remover(String codigo): Remove um caractere da árvore sem perder a estrutura.
+
 Main.java: Classe responsável pela interação com o usuário por meio de um menu. Funcionalidades do menu:
   1. Inserir caractere: Adiciona um novo caractere à árvore.
   2. Buscar caractere: Mostra qual caractere corresponde a um código Morse informado.
