@@ -39,7 +39,9 @@ Main.java: Classe responsável pela interação com o usuário por meio de um me
 
 ## Tecnologias Utilizadas
 Linguagem: Java (sem uso de bibliotecas prontas de estrutura de dados).
+
 Ambiente de execução: Terminal / Console.
+
 Classes utilizadas: String, Scanner, System.out.
 
 ## Como Executar o Projeto
@@ -52,6 +54,7 @@ Classes utilizadas: String, Scanner, System.out.
 ## Exemplo de Tradução
 Entrada:
   Digite uma mensagem em código Morse (separada por espaços): ... --- ...
+  
 Saída:
   Mensagem traduzida: SOS
 
@@ -78,4 +81,5 @@ Para “SOS” o programa percorre:
   S  → ... → E → I → S
 
 Juntando os resultados: 
+
   Mensagem traduzida: SOS
