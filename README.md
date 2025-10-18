@@ -19,6 +19,7 @@ Cada caminho da raiz até um nó folha define a sequência de pontos e traços c
 
 ## Estruturas do Código
 Nodo.java: Classe que define a estrutura de cada nó da árvore.
+
 ArvoreBinariaMorse.java: Classe principal que contém toda a lógica da árvore binária de código Morse. Principais métodos da classe: 
   - inicializar(): Cria a raiz da árvore.
   - inserir(String codigo, char caractere): Insere um caractere conforme sua sequência de pontos (esquerda) e traços (direita).
